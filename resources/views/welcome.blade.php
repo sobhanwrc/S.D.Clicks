@@ -365,7 +365,7 @@
                     <div class="spa-widget">
                         <h5>About me</h5>
                         <div class="content">
-                            <img src="images/imgs/about-widget.jpg" alt="Ella">
+                            <img src="{{ url('storage/frontend/images/imgs/about-widget.jpg') }}" alt="Ella">
                             <p>My name is Ella. Pellentesque cursus pulvinar pellentesque. Aenean euismod non lorem at vehicula. Mauris risus massa, hendrerit in blandit eu, placerat nec nulla.</p>
                         </div>
                     </div>
@@ -436,7 +436,7 @@
             <!-- END Side panel -->
             <!-- Banner block -->
             <div class="banner-block full-screen-block fw-main-row">
-                <div class="item dark-bg" style="background-image: url(images/imgs/slide2.jpg);">
+                <div class="item dark-bg" style="background-image: url({{ url('storage/frontend/images/imgs/slide2.jpg') }});">
                     <div class="centered-container fw-container">
                         <div class="h1">I’m a Photographer</div>
                         <p>Your dream about your photo will become true with me</p>
@@ -457,16 +457,16 @@
                     <!-- Category items -->
                     <div class="fw-row">
                         <!-- Category item -->
-                        <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-3"><div class="category-item dark-bg" style="background-image: url(images/imgs/blog-category5.jpg);"><img src="images/imgs/blog-category5.jpg" alt="portrait"><a href="blog_grid_with_sidebar.html" class="button-style2 centered-container"><span>portrait</span></a></div></div>
+                        <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-3"><div class="category-item dark-bg" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category5.jpg') }});"><img src="{{ url('storage/frontend/images/imgs/blog-category5.jpg') }}" alt="portrait"><a href="blog_grid_with_sidebar.html" class="button-style2 centered-container"><span>portrait</span></a></div></div>
                         <!-- END Category item -->
                         <!-- Category item -->
-                        <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-3"><div class="category-item dark-bg" style="background-image: url(images/imgs/blog-category6.jpg);"><img src="images/imgs/blog-category6.jpg" alt="lifestyle"><a href="blog_grid_with_sidebar.html" class="button-style2 centered-container"><span>lifestyle</span></a></div></div>
+                        <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-3"><div class="category-item dark-bg" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category6.jpg') }});"><img src="{{ url('storage/frontend/images/imgs/blog-category6.jpg') }}" alt="lifestyle"><a href="blog_grid_with_sidebar.html" class="button-style2 centered-container"><span>lifestyle</span></a></div></div>
                         <!-- END Category item -->
                         <!-- Category item -->
-                        <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-3"><div class="category-item dark-bg" style="background-image: url(images/imgs/blog-category7.jpg);"><img src="images/imgs/blog-category7.jpg" alt="fashion"><a href="blog_grid_with_sidebar.html" class="button-style2 centered-container"><span>fashion</span></a></div></div>
+                        <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-3"><div class="category-item dark-bg" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category7.jpg') }});"><img src="{{ url('storage/frontend/images/imgs/blog-category7.jpg') }}" alt="fashion"><a href="blog_grid_with_sidebar.html" class="button-style2 centered-container"><span>fashion</span></a></div></div>
                         <!-- END Category item -->
                         <!-- Category item -->
-                        <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-3"><div class="category-item dark-bg" style="background-image: url(images/imgs/blog-category8.jpg);"><img src="images/imgs/blog-category8.jpg" alt="people"><a href="blog_grid_with_sidebar.html" class="button-style2 centered-container"><span>people</span></a></div></div>
+                        <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-3"><div class="category-item dark-bg" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category8.jpg') }});"><img src="{{ url('storage/frontend/images/imgs/blog-category8.jpg') }}" alt="people"><a href="blog_grid_with_sidebar.html" class="button-style2 centered-container"><span>people</span></a></div></div>
                         <!-- END Category item -->
                     </div>
                     <!-- END Category items -->
@@ -477,7 +477,7 @@
                 <div class="fw-container-fluid">
                     <div class="fw-row">
                         <div class="col-img fw-col-xs-12 fw-col-sm-4 fw-col-md-6">
-                            <div style="background-image: url(images/imgs/side-bg1.jpg);"><img src="images/imgs/side-bg1.jpg" alt="about me"></div>
+                            <div style="background-image: url({{ url('storage/frontend/images/imgs/side-bg1.jpg') }});"><img src="{{ url('storage/frontend/images/imgs/side-bg1.jpg') }}" alt="about me"></div>
                         </div>
                         <div class="fw-col-xs-12 fw-col-sm-8 fw-col-md-6">
                             <!-- Heading -->
@@ -544,7 +544,7 @@
                     <div class="portfolio-items masonry fw-row">
                         <!-- Portfolio item -->
                         <div class="portfolio-item fw-col-xs-12 fw-col-sm-6 fw-col-md-3">
-                            <div style="background-image: url(images/imgs/gallery-item2.jpg);">
+                            <div style="background-image: url({{ url('storage/frontend/images/imgs/gallery-item2.jpg') }});">
                                 <a href="gallery-post.html">
                                     <div>
                                         <div class="h5">Photo name</div>
@@ -556,7 +556,7 @@
                         <!-- END Portfolio item -->
                         <!-- Portfolio item -->
                         <div class="portfolio-item fw-col-xs-12 fw-col-sm-6 fw-col-md-6">
-                            <div style="background-image: url(images/imgs/gallery-item1.jpg);">
+                            <div style="background-image: url({{ url('storage/frontend/images/imgs/gallery-item1.jpg') }});">
                                 <a href="gallery-post.html">
                                     <div>
                                         <div class="h5">Photo name</div>
@@ -568,7 +568,7 @@
                         <!-- END Portfolio item -->
                         <!-- Portfolio item -->
                         <div class="portfolio-item fw-col-xs-12 fw-col-sm-6 fw-col-md-3">
-                            <div style="background-image: url(images/imgs/gallery-item3.jpg);">
+                            <div style="background-image: url({{ url('storage/frontend/images/imgs/gallery-item3.jpg') }});">
                                 <a href="gallery-post.html">
                                     <div>
                                         <div class="h5">Photo name</div>
@@ -580,7 +580,7 @@
                         <!-- END Portfolio item -->
                         <!-- Portfolio item -->
                         <div class="portfolio-item fw-col-xs-12 fw-col-sm-6 fw-col-md-3">
-                            <div style="background-image: url(images/imgs/gallery-item4.jpg);">
+                            <div style="background-image: url({{ url('storage/frontend/images/imgs/gallery-item4.jpg') }});">
                                 <a href="gallery-post.html">
                                     <div>
                                         <div class="h5">Photo name</div>
@@ -592,7 +592,7 @@
                         <!-- END Portfolio item -->
                         <!-- Portfolio item -->
                         <div class="portfolio-item fw-col-xs-12 fw-col-sm-6 fw-col-md-3">
-                            <div style="background-image: url(images/imgs/gallery-item5.jpg);">
+                            <div style="background-image: url({{ url('storage/frontend/images/imgs/gallery-item5.jpg') }});">
                                 <a href="gallery-post.html">
                                     <div>
                                         <div class="h5">Photo name</div>
@@ -604,7 +604,7 @@
                         <!-- END Portfolio item -->
                         <!-- Portfolio item -->
                         <div class="portfolio-item fw-col-xs-12 fw-col-sm-6 fw-col-md-3">
-                            <div style="background-image: url(images/imgs/gallery-item6.jpg);">
+                            <div style="background-image: url({{ url('storage/frontend/images/imgs/gallery-item6.jpg') }});">
                                 <a href="gallery-post.html">
                                     <div>
                                         <div class="h5">Photo name</div>
@@ -616,7 +616,7 @@
                         <!-- END Portfolio item -->
                         <!-- Portfolio item -->
                         <div class="portfolio-item fw-col-xs-12 fw-col-sm-6 fw-col-md-3">
-                            <div style="background-image: url(images/imgs/gallery-item7.jpg);">
+                            <div style="background-image: url({{ url('storage/frontend/images/imgs/gallery-item7.jpg') }});">
                                 <a href="gallery-post.html">
                                     <div>
                                         <div class="h5">Photo name</div>
@@ -628,7 +628,7 @@
                         <!-- END Portfolio item -->
                         <!-- Portfolio item -->
                         <div class="portfolio-item row1 fw-col-xs-12 fw-col-sm-6 fw-col-md-6">
-                            <div style="background-image: url(images/imgs/gallery-item8.jpg);">
+                            <div style="background-image: url({{ url('storage/frontend/images/imgs/gallery-item8.jpg') }});">
                                 <a href="gallery-post.html">
                                     <div>
                                         <div class="h5">Photo name</div>
@@ -653,23 +653,23 @@
                     <!-- Slider -->
                     <div class="slider-wrap">
                         <div class="item testimonials-item">
-                            <div class="avatar"><img src="images/imgs/avatar.jpg" alt="Emma Levise"></div>
+                            <div class="avatar"><img src="{{ url('storage/frontend/images/imgs/avatar.jpg') }}" alt="Emma Levise"></div>
                             <blockquote>Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in. <span class="post">Emma Levise</span></blockquote>
                         </div>
                         <div class="item testimonials-item">
-                            <div class="avatar"><img src="images/imgs/avatar.jpg" alt="Emma Levise"></div>
+                            <div class="avatar"><img src="{{ url('storage/frontend/images/imgs/avatar.jpg') }}" alt="Emma Levise"></div>
                             <blockquote>Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in. <span class="post">Emma Levise</span></blockquote>
                         </div>
                         <div class="item testimonials-item">
-                            <div class="avatar"><img src="images/imgs/avatar.jpg" alt="Emma Levise"></div>
+                            <div class="avatar"><img src="{{ url('storage/frontend/images/imgs/avatar.jpg') }}" alt="Emma Levise"></div>
                             <blockquote>Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in. <span class="post">Emma Levise</span></blockquote>
                         </div>
                         <div class="item testimonials-item">
-                            <div class="avatar"><img src="images/imgs/avatar.jpg" alt="Emma Levise"></div>
+                            <div class="avatar"><img src="{{ url('storage/frontend/images/imgs/avatar.jpg') }}" alt="Emma Levise"></div>
                             <blockquote>Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in. <span class="post">Emma Levise</span></blockquote>
                         </div>
                         <div class="item testimonials-item">
-                            <div class="avatar"><img src="images/imgs/avatar.jpg" alt="Emma Levise"></div>
+                            <div class="avatar"><img src="{{ url('storage/frontend/images/imgs/avatar.jpg') }}" alt="Emma Levise"></div>
                             <blockquote>Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in. <span class="post">Emma Levise</span></blockquote>
                         </div>
                     </div>
@@ -686,14 +686,14 @@
                     <p class="p-text tac" style="max-width:630px;margin: 0 auto 25px;">Suspendisse potenti. Pellentesque cursus pulvinar pellentesque. Aenean euismod non lorem at vehicula. Mauris risus massa, hendrerit in blandit eu, placerat nec nulla.</p>
                     <!-- Carousel -->
                     <div class="photo-carousel">
-                        <div class="item" style="background-image: url(images/imgs/blog-category1.jpg)"><a href="#"></a><img src="images/imgs/blog-category1.jpg" alt="carousel item"></div>
-                        <div class="item" style="background-image: url(images/imgs/blog-category2.jpg)"><a href="#"></a><img src="images/imgs/blog-category2.jpg" alt="carousel item"></div>
-                        <div class="item" style="background-image: url(images/imgs/blog-category3.jpg)"><a href="#"></a><img src="images/imgs/blog-category3.jpg" alt="carousel item"></div>
-                        <div class="item" style="background-image: url(images/imgs/blog-category4.jpg)"><a href="#"></a><img src="images/imgs/blog-category4.jpg" alt="carousel item"></div>
-                        <div class="item" style="background-image: url(images/imgs/blog-category5.jpg)"><a href="#"></a><img src="images/imgs/blog-category5.jpg" alt="carousel item"></div>
-                        <div class="item" style="background-image: url(images/imgs/blog-category6.jpg)"><a href="#"></a><img src="images/imgs/blog-category6.jpg" alt="carousel item"></div>
-                        <div class="item" style="background-image: url(images/imgs/blog-category7.jpg)"><a href="#"></a><img src="images/imgs/blog-category7.jpg" alt="carousel item"></div>
-                        <div class="item" style="background-image: url(images/imgs/blog-category8.jpg)"><a href="#"></a><img src="images/imgs/blog-category8.jpg" alt="carousel item"></div>
+                        <div class="item" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category1.jpg') }})"><a href="#"></a><img src="{{ url('storage/frontend/images/imgs/blog-category1.jpg') }}" alt="carousel item"></div>
+                        <div class="item" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category2.jpg') }})"><a href="#"></a><img src="{{ url('storage/frontend/images/imgs/blog-category2.jpg') }}" alt="carousel item"></div>
+                        <div class="item" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category3.jpg') }})"><a href="#"></a><img src="{{ url('storage/frontend/images/imgs/blog-category3.jpg') }}" alt="carousel item"></div>
+                        <div class="item" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category4.jpg') }})"><a href="#"></a><img src="{{ url('storage/frontend/images/imgs/blog-category4.jpg') }}" alt="carousel item"></div>
+                        <div class="item" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category5.jpg') }})"><a href="#"></a><img src="{{ url('storage/frontend/images/imgs/blog-category5.jpg') }}" alt="carousel item"></div>
+                        <div class="item" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category6.jpg') }})"><a href="#"></a><img src="{{ url('storage/frontend/images/imgs/blog-category6.jpg') }}" alt="carousel item"></div>
+                        <div class="item" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category7.jpg') }})"><a href="#"></a><img src="{{ url('storage/frontend/images/imgs/blog-category7.jpg') }}" alt="carousel item"></div>
+                        <div class="item" style="background-image: url({{ url('storage/frontend/images/imgs/blog-category8.jpg') }})"><a href="#"></a><img src="{{ url('storage/frontend/images/imgs/blog-category8.jpg') }}" alt="carousel item"></div>
                     </div>
                     <!-- END Carousel -->
                     <div class="tac"><a href="#" class="button-style3 big white-dark"><i class="social-icon-instagram-social-network-logo-of-photo-camera"></i><span>follow me</span></a></div>
@@ -709,7 +709,7 @@
                         <div class="fw-col-xs-12 fw-col-sm-6 fw-col-lg-3">
                             <!-- Pricing item -->
                             <div class="pricing-item">
-                                <div class="top" style="background-image: url(images/imgs/price1.jpg)">
+                                <div class="top" style="background-image: url({{ url('storage/frontend/images/imgs/price1.jpg') }})">
                                     <h5 class="uppercase"><span>outdoor session</span></h5>
                                     <div class="price">49 <span>$</span></div>
                                     <h6>Beautifull</h6>
@@ -729,7 +729,7 @@
                         <div class="fw-col-xs-12 fw-col-sm-6 fw-col-lg-3">
                             <!-- Pricing item -->
                             <div class="pricing-item">
-                                <div class="top" style="background-image: url(images/imgs/price2.jpg)">
+                                <div class="top" style="background-image: url({{ url('storage/frontend/images/imgs/price2.jpg') }})">
                                     <h5 class="uppercase"><span>portrait session</span></h5>
                                     <div class="price">99 <span>$</span></div>
                                     <h6>Unforgetable</h6>
@@ -749,7 +749,7 @@
                         <div class="fw-col-xs-12 fw-col-sm-6 fw-col-lg-3">
                             <!-- Pricing item -->
                             <div class="pricing-item">
-                                <div class="top" style="background-image: url(images/imgs/price3.jpg)">
+                                <div class="top" style="background-image: url({{ url('storage/frontend/images/imgs/price3.jpg') }})">
                                     <h5 class="uppercase"><span>studio session</span></h5>
                                     <div class="price">129 <span>$</span></div>
                                     <h6>Fashionable</h6>
@@ -769,7 +769,7 @@
                         <div class="fw-col-xs-12 fw-col-sm-6 fw-col-lg-3">
                             <!-- Pricing item -->
                             <div class="pricing-item">
-                                <div class="top" style="background-image: url(images/imgs/price4.jpg)">
+                                <div class="top" style="background-image: url({{ url('storage/frontend/images/imgs/price4.jpg') }})">
                                     <h5 class="uppercase"><span>ultimate session</span></h5>
                                     <div class="price">169 <span>$</span></div>
                                     <h6>Unstopable</h6>
@@ -809,7 +809,7 @@
                 <div class="wrap">
                     <div class="fw-container">
                         <!-- Logo -->
-                        <div class="logo"><a href="index-2.html"><img src="images/logo-light.png" alt=""></a></div>
+                        <div class="logo"><a href="index-2.html"><img src="{{ url('storage/frontend/images/logo-light.png') }}" alt=""></a></div>
                         <!-- END Logo -->
                         <!-- Social links -->
                         <div class="social-links">
