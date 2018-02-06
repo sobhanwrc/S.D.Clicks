@@ -27,13 +27,13 @@
         <div id="all">
             <!-- Preloader -->
             <div id="page-preloader">
-                <div class="spinner centered-container"><img src="{{ url('storage/frontend/images/preloader.jpg') }}" alt=""></div>
+                <div class="spinner centered-container"><img src="{{ url('storage/frontend/images/camera.gif') }}" alt=""></div>
             </div>
             <!-- END Preloader -->
             <header class="header fw-main-row">
                 <div class="fw-container">
                     <!-- Logo -->
-                    <div class="logo"><a href="index-2.html"><img src="{{ url('storage/frontend/images/logo.png') }}" alt=""></a></div>
+                    <div class="logo"><a href="index-2.html"><img src="{{ url('storage/frontend/images/main_logo.png') }}" style="width: 200px; height: 100px;" alt=""></a></div>
                     <!-- END Logo -->
                     <div class="fr">
                         <!-- Navigation -->
