@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/admin', "AdminController@index");
+
+Route::post('/login-submit', 'AdminController@login');
+
+Route::group(['middleware' => ['admin']], function () {
+	Route::get('/dashboard', 'DashboardController@index');
+});
