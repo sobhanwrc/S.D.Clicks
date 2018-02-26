@@ -45,4 +45,8 @@ class AdminController extends Controller
             return redirect('/admin');
         }
     }
+
+    public function google_login () {
+        //source file is https://medium.com/justlaravel/laravel-social-login-using-socialite-45305c7ddc00
+    }
 }
