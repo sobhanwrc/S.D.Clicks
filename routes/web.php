@@ -22,5 +22,7 @@ Route::get('redirect/google','AdminController@google_login');
 
 Route::group(['middleware' => ['admin']], function () {
 	Route::get('/admin/dashboard', 'DashboardController@index');
+	Route::get('/admin/profile', 'DashboardController@profile');
+	Route::post('/admin/profile_submit', 'DashboardController@profile_submit');
 	Route::get('/logout', 'DashboardController@logout');
 });
