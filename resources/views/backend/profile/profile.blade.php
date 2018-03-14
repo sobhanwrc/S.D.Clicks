@@ -24,30 +24,26 @@
     <section class="content">
 
       <div class="row">
+        <form class="form-horizontal" name="profile_form" id="profile_form" method="post" action="/admin/profile_submit" enctype="multipart/form-data">
+          {{csrf_field()}}
         <div class="col-md-3">
 
           <!-- Profile Image -->
           <div class="box box-primary">
             <div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+              @if(!empty(Auth::guard('admin')->user()->profile_image))
+                <img class="profile-user-img img-responsive img-circle image_preview" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+              @else
+                <img class="profile-user-img img-responsive img-circle image_preview" src="{{url('storage/admin/img/profile_image.png')}}" alt="User profile picture">
+              @endif
 
-              <h3 class="profile-username text-center">Nina Mcintire</h3>
+              <!-- <input type="file" name="profile_image" value="" id="profile_image" class="profile_image"> -->
+              <div class="m-b-10">
+                  <input type="file" name="profile_image" class="profile_image" id="profile_image">
+                  <span class="text-danger">{{ $errors->first('profile_image') }}</span>
+              </div>
 
-              <p class="text-muted text-center">Software Engineer</p>
-
-              <ul class="list-group list-group-unbordered">
-                <li class="list-group-item">
-                  <b>Followers</b> <a class="pull-right">1,322</a>
-                </li>
-                <li class="list-group-item">
-                  <b>Following</b> <a class="pull-right">543</a>
-                </li>
-                <li class="list-group-item">
-                  <b>Friends</b> <a class="pull-right">13,287</a>
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+              <h3 class="profile-username text-center">{{Auth::guard('admin')->user()->name}}</h3>
             </div>
             <!-- /.box-body -->
           </div>
@@ -62,9 +58,6 @@
             <div class="tab-content">
 
               <div class="active tab-pane" id="settings">
-                <form class="form-horizontal" name="profile_form" id="profile_form" method="post" action="/admin/profile_submit">
-                  {{csrf_field()}}
-
                   <div class="form-group">
                     <label for="inputName" class="col-sm-2 control-label {{ $errors->has('name') ? 'has-error' : '' }}">Name</label>
 
@@ -134,7 +127,6 @@
                       <button type="submit" class="btn btn-success">Submit</button>
                     </div>
                   </div>
-                </form>
               </div>
               <!-- /.tab-pane -->
             </div>
@@ -142,6 +134,7 @@
           </div>
           <!-- /.nav-tabs-custom -->
         </div>
+      </form>
         <!-- /.col -->
       </div>
       <!-- /.row -->

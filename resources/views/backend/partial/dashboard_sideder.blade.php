@@ -5,7 +5,11 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="{{ url('storage/admin/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+          @if(!empty(Auth::guard('admin')->user()->profile_image))
+            <img class="img-circle sidebar_image_preview" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+          @else
+            <img class="img-circle sidebar_image_preview" src="{{url('storage/admin/img/profile_image.png')}}" alt="User profile picture">
+          @endif
         </div>
         <div class="pull-left info">
           <p>{{Auth::guard('admin')->user()->name}}</p>

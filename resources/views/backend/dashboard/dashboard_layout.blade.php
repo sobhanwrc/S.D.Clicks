@@ -64,3 +64,23 @@
 
 <!-- Mirrored from adminlte.io/themes/AdminLTE/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Feb 2018 07:16:54 GMT -->
 </html>
+
+<script type="text/javascript">
+  function readURL(input) {
+      if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          
+          reader.onload = function (e) {
+              $('.image_preview').attr('src', e.target.result);
+              $('.header_image_preview').attr('src', e.target.result);
+              $('.sidebar_image_preview').attr('src', e.target.result);
+          }
+          
+          reader.readAsDataURL(input.files[0]);
+      }
+  }
+  
+  $(".profile_image").change(function(){
+      readURL(this);
+  });
+</script>

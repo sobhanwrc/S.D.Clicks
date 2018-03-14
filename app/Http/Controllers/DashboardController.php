@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\User;
 use Validator;
+use Image;
 
 class DashboardController extends Controller
 {
@@ -30,14 +31,17 @@ class DashboardController extends Controller
     		'fb_id' => 'required',
     		'instagram_id' => 'required',
     		'mobile_no' => 'required',
-    		'about_me' => 'required'
+    		'about_me' => 'required',
+            'profile_image' => 'required|max:500000'
     	],[
     		'name.required' => "Please enter your name.",
     		'address.required' => "Please enter your address.",
     		'fb_id.required' => "Please enter your facebook id.",
     		'instagram_id.required' => "Please enter your instagram id.",
     		'mobile_no.required' => "Please enter your mobile number.",
-    		'about_me.required' => "Please enter your details."
+    		'about_me.required' => "Please enter your details.",
+            'profile_image.required' => "Please upload your profile image.",
+            'profile_image.max' => "Upload within 5MB"
     	])->validate();
 
     	$edit = User::find(Auth::guard('admin')->user()->id);
