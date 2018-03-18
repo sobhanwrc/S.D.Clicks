@@ -218,7 +218,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               @if(!empty(Auth::guard('admin')->user()->profile_image))
-                <img class="user-image img-responsive header_image_preview" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+                <img class="user-image img-responsive header_image_preview" src="{{url('storage/admin/upload/profile_image/original/'.Auth::guard('admin')->user()->profile_image)}}" alt="User profile picture">
               @else
                 <img class="user-image img-responsive header_image_preview" src="{{url('storage/admin/img/profile_image.png')}}" alt="User profile picture">
               @endif
@@ -229,7 +229,7 @@
               <li class="user-header">
 
                 @if(!empty(Auth::guard('admin')->user()->profile_image))
-                  <img class="img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+                  <img class="img-circle" src="{{url('storage/admin/upload/profile_image/original/'.Auth::guard('admin')->user()->profile_image)}}" alt="User profile picture">
                 @else
                   <img class="img-circle" src="{{url('storage/admin/img/profile_image.png')}}" alt="User profile picture">
                 @endif

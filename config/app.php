@@ -179,6 +179,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        'Intervention\Image\ImageServiceProvider',
+        Nexmo\Laravel\NexmoServiceProvider::class,
     ],
 
     /*
@@ -229,6 +231,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Image' => 'Intervention\Image\Facades\Image',
+        'Nexmo' => Nexmo\Laravel\Facade\Nexmo::class,
 
     ],
 

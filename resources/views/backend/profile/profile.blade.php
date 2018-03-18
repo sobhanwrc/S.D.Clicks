@@ -26,13 +26,16 @@
       <div class="row">
         <form class="form-horizontal" name="profile_form" id="profile_form" method="post" action="/admin/profile_submit" enctype="multipart/form-data">
           {{csrf_field()}}
+
         <div class="col-md-3">
 
           <!-- Profile Image -->
           <div class="box box-primary">
             <div class="box-body box-profile">
               @if(!empty(Auth::guard('admin')->user()->profile_image))
-                <img class="profile-user-img img-responsive img-circle image_preview" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+                <img class="profile-user-img img-responsive img-circle image_preview" style="height: 200px; width: 220px;" src="{{url('storage/admin/upload/profile_image/original/'.Auth::guard('admin')->user()->profile_image)}}" alt="User profile picture">
+
+                <input class="form-group" type="hidden" name="exiting_profile_image" id="exiting_profile_image" value="{{Auth::guard('admin')->user()->profile_image}}">
               @else
                 <img class="profile-user-img img-responsive img-circle image_preview" src="{{url('storage/admin/img/profile_image.png')}}" alt="User profile picture">
               @endif
