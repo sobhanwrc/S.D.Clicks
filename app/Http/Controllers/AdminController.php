@@ -7,13 +7,13 @@ use Validator;
 use App\User;
 use Auth;
 use App\Email\Email;
-use App\SMS\SMS;
+use Nexmo;
+use Laravel\Socialite\Facades\Socialite;
 
 class AdminController extends Controller
 {
     public function __construct (){
         $this->admin_email_send = New Email();
-        $this->sms_send = New SMS();
     }
 
     public function index () {
@@ -38,14 +38,13 @@ class AdminController extends Controller
 
             $mail = $this->admin_email_send->sendEmail($email,$data);
 
-            $data_for_send_sms = [
-                'to' => '917980149707',
+            $send = Nexmo::message()->send([
+                'to'   => '917980149707',
                 'from' => '917278088825',
                 'text' => 'Hey! Admin , Someone successfully login with email id '. $request->email .'and from IP is '. $request->ip().''
-            ];
-            $sms_send = $this->sms_send->sentSMS($data_for_send_sms);
+            ]);
 
-            if($mail && $sms_send){
+            if($mail && $send){
                 return redirect('/admin/dashboard');                
             }else{
                 $request->session()->flash("login-failed", "Email or Password is wrong.");
@@ -56,6 +55,10 @@ class AdminController extends Controller
             $request->session()->flash("login-failed", "Email or Password is wrong.");
             return redirect('/admin');
         }
+    }
+
+    public function fb_login () {
+
     }
 
     public function google_login () {

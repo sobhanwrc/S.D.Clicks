@@ -181,6 +181,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         'Intervention\Image\ImageServiceProvider',
         Nexmo\Laravel\NexmoServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 
     /*
@@ -233,6 +234,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => 'Intervention\Image\Facades\Image',
         'Nexmo' => Nexmo\Laravel\Facade\Nexmo::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 
