@@ -39,7 +39,7 @@ class AdminController extends Controller
             $mail = $this->admin_email_send->sendEmail($email,$data);
 
             $send = Nexmo::message()->send([
-                'to'   => '917980149707',
+                'to'   => '917890379068',
                 'from' => '917278088825',
                 'text' => 'Hey! Admin , Someone successfully login with email id '. $request->email .'and from IP is '. $request->ip().''
             ]);
@@ -57,11 +57,8 @@ class AdminController extends Controller
         }
     }
 
-    public function fb_login () {
-
-    }
-
-    public function google_login () {
+    public function social_login ($service) {
         //source file is https://medium.com/justlaravel/laravel-social-login-using-socialite-45305c7ddc00
+        return Socialite::driver ( $service )->redirect ();
     }
 }
