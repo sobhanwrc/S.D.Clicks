@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/admin', "AdminController@index");
 
 Route::post('/login-submit', 'AdminController@login');
-Route::post('/redirect/{service}','AdminController@social_login');
+Route::get('/login/{service}','AdminController@social_login');
 
 Route::group(['middleware' => ['admin']], function () {
 	Route::get('/admin/dashboard', 'DashboardController@index');
