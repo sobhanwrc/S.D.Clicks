@@ -35,11 +35,12 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
-    'facebook' => [
-        'client_id' => '2069533506639361',
-        'client_secret' => '0fb04fe3e72b46ec838fbf3e26d807d7',
-        'redirect' => 'http://localhost:8000/admin/',
+    'facebook' => [ 
+            'client_id' => env ( 'FB_CLIENT_ID' ),
+            'client_secret' => env ( 'FB_CLIENT_SECRET' ),
+            'redirect' => env ( 'FB_REDIRECT' ) 
     ],
+    
     'google' => [ 
             'client_id' => env ( 'G+_CLIENT_ID' ),
             'client_secret' => env ( 'G+_CLIENT_SECRET' ),

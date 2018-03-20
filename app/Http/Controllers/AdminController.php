@@ -61,4 +61,13 @@ class AdminController extends Controller
         //source file is https://medium.com/justlaravel/laravel-social-login-using-socialite-45305c7ddc00
         return Socialite::driver ( $service )->redirect ();
     }
+
+    public function callback ($service) {
+        $user = Socialite::with ( $service )->user ();
+        if(!empty($user)){
+
+        }
+        echo "<pre>";
+        print_r($user);
+    }
 }

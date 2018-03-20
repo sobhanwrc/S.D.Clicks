@@ -19,6 +19,7 @@ Route::get('/admin', "AdminController@index");
 
 Route::post('/login-submit', 'AdminController@login');
 Route::get('/login/{service}','AdminController@social_login');
+Route::get ( '/admin/callback/{service}', 'AdminController@callback' );
 
 Route::group(['middleware' => ['admin']], function () {
 	Route::get('/admin/dashboard', 'DashboardController@index');
