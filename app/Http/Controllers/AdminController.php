@@ -69,9 +69,27 @@ class AdminController extends Controller
     public function callback ($service) {
         $user = Socialite::with ( $service )->user ();
         if(!empty($user)){
+            $email = $user->email;
 
+            $allready_exist_check = User::where('email',$email)->get()->toArray();
+
+            if(!empty($allready_exist_check)){
+                $edit = User::find($allready_exist_check['id']);
+                $edit->updated_at = NOW();
+
+                if($edit->save()){
+                    return redirect('/admin/dashboard');
+                }
+            }else{
+                $add = new User();
+                $add->name = $user->name;
+                $add->email = $user->email;
+                $add->profile_image = $user->avatar;
+
+                if($add->save()){
+                    return redirect('/admin/dashboard');
+                }
+            }
         }
-        echo "<pre>";
-        print_r($user);
     }
 }
