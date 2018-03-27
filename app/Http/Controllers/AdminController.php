@@ -59,6 +59,10 @@ class AdminController extends Controller
 
     public function social_login ($service) {
         //source file is https://medium.com/justlaravel/laravel-social-login-using-socialite-45305c7ddc00
+
+        //for facebook login you have to set the url https.Because facebook has been changed the rull of web login valid oAuth redirect urls. So, First I make virtual host with https.Then change the settings under facebook developre.
+
+        
         return Socialite::driver ( $service )->redirect ();
     }
 
